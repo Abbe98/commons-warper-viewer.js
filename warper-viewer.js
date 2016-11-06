@@ -8,7 +8,7 @@
         var templates = result.query.pages[mw.config.values.wgArticleId].templates;
         for (var key in templates) {
           if (templates[key].title === 'Template:Map') {
-            var map = 'https://tools.wmflabs.org/warped-to-iframe/map.php?pageid=' + mw.config.values.wgArticleId;
+            var map = 'https://tools.wmflabs.org/warped-to-iframe/map.php?opacity=true&wmf=true&pageid=' + mw.config.values.wgArticleId;
             $('#mw-content-text')
               .append('<h2>Georeferenced Map</h2>')
               .append('<iframe src="' + map + '" width="640" height="480" style="border:0;"></iframe>');
